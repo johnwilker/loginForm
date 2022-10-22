@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color:#ffc632
+}
+
+body {
+    background-image: url(../images/side-image.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% auto;
+    height: 100vh;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    color: #d4ccb6;
+}
+
+.bg-image {
+    background-color: #191816;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    margin: 40px 0 0 40px;
+}
+
+main {
+    max-width: 572px;
+    max-height: 512px;
+    height: 512px;
+    width: 572px;
+    background-color: #24221f;
+    margin: auto;
+}
+
+.information {
+    padding-left: 119px;
+}
+
+.information div {
+    display: flex;
+    margin-top: 55px;
+}
+
+.email {
+    padding-left: 119px;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    display: flex;
+    width: 335px;
+    padding-left: 12px;
+    border-radius: 4px;
+}
+
+input {
+    background-color: #24221f;
+    border: none;
+    height: 42px;
+    width: 180px;
+    padding-left: 16px;
+    padding-top: 4px;
+    color:#afb6c2;
+}
+
+input:focus {
+    outline: none;
+    font-weight: 600;
+}
+
+.email fieldset:focus-within img:nth-child(1){
+    display: none;
+}
+
+.email fieldset:focus-within img:nth-child(2){
+    display: block;
+}
+
+.email fieldset:hover {
+    border: 2px solid #f8cf65;
+}
+
+.email fieldset:focus-within {
+    border:2px solid #ffc632;
+}
+
+.email div fieldset img:nth-child(2) {
+    display:none;
+}
+
+.email div fieldset:hover img:nth-child(2) {
+    display: block;
+}
+
+.email div fieldset:hover img:nth-child(1) {
+    display:none
+}
+
+.email .image-eye{
+    display: flex;
+    /* position: absolute; */
+    padding-left: 80px;
+    padding-right: 12px;
+}
+
+.remember-me {
+    display: flex;
+    margin-top: 20px;
+}
+
+.remember-me p {
+    padding-left: 20px;
+    color: #ffc632;
+    font-size: 14px;
+    display: flex;
+}
+
+.remember-me span {
+    line-height: 19px;
+}
+
+.sign-in {
+    padding-left: 119px;
+    padding-top: 20px;
+}
+
+.sign-in button {
+    height: 51px;
+    width: 335px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffc632;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-in button:hover {
+    background-color: #f8cf65;
+}
+
+.sign-in p {
+    padding-left: 48px;
+    padding-top: 14px;
+    color: #ffc632;
+    font-size: 14px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #afb6c2;
+  border-radius: 4px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color:#24221f;
+}
+
+.container input:checked ~ .checkmark {
+    border: none;
+    background-color:#ffc632;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 12px;
+  border: solid #473404;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
