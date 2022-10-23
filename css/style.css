@@ -35,8 +35,6 @@ header img {
 }
 
 main {
-    max-width: 572px;
-    max-height: 512px;
     height: 512px;
     width: 572px;
     background-color: #24221f;
@@ -44,7 +42,7 @@ main {
 }
 
 .information {
-    padding-left: 119px;
+    margin-left: 119px;
 }
 
 .information div {
@@ -53,7 +51,7 @@ main {
 }
 
 .email {
-    padding-left: 119px;
+    margin-left: 119px;
     padding-top: 27px;
     display: flex;
     flex-direction: column;
@@ -110,11 +108,19 @@ input:focus {
     display:none
 }
 
+.email div fieldset img {
+    display: flex;
+}
+
+.emai div fieldset img:nth-child(3) {
+    display: flex;
+    justify-content:right;
+}
+
 .email .image-eye{
     display: flex;
-    /* position: absolute; */
-    padding-left: 80px;
-    padding-right: 12px;
+    margin-left: 88px;
+    margin-right: 12px;
 }
 
 .remember-me {
@@ -123,7 +129,7 @@ input:focus {
 }
 
 .remember-me p {
-    padding-left: 20px;
+    margin-left: 56px;
     color: #ffc632;
     font-size: 14px;
     display: flex;
@@ -134,8 +140,8 @@ input:focus {
 }
 
 .sign-in {
-    padding-left: 119px;
-    padding-top: 20px;
+    margin-left: 119px;
+    margin-top: 20px;
 }
 
 .sign-in button {
@@ -155,8 +161,8 @@ input:focus {
 }
 
 .sign-in p {
-    padding-left: 48px;
-    padding-top: 14px;
+    margin-left: 48px;
+    margin-top: 14px;
     color: #ffc632;
     font-size: 14px;
 }
